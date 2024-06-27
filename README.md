@@ -1,4 +1,4 @@
-# STM32 dataloggers example 
+# STM32 USB Device Composite Class based on the STM32H503
 
 In this repository : 
 
