@@ -1,5 +1,7 @@
 # STM32 USB Device Composite Class based on the STM32H503
 
+Change for PB_MCU01_H503A board
+
 In this repository : 
 
 * This application provides a C code example showing on how to use the legacy USB Middleware to develop a USB Device Composite application, based on the article published here> https://community.st.com/t5/stm32-mcus/how-to-implement-a-usb-device-composite-in-stm32h5/ta-p/691123
