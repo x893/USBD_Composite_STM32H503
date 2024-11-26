@@ -91,6 +91,14 @@ extern uint8_t CDC_InstID;
 uint8_t UserTxBuffer[64] = "MY CDC is Working!\r\n";
 uint8_t UserRxBuffer[64];
 
+int PrepareTxData(void)
+{
+	static int count = 0;
+	return snprintf((char *)UserTxBuffer, sizeof(UserTxBuffer)-1,
+		"CDC Count: %d\r\n", count++
+		);
+
+}
 /* Private functions ---------------------------------------------------------*/
 
 /**

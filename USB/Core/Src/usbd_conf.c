@@ -91,7 +91,7 @@ USBD_StatusTypeDef USBD_LL_Init(USBD_HandleTypeDef *pdev)
 	hpcd_USB_DRD_FS.pData = pdev;
 
 	/* Initialize LL Driver */
-	MX_USB_PCD_Init();
+	MX_USB_PCD_InitEx();
 
 	/* Control Endpoints */
 	HAL_PCDEx_PMAConfig((PCD_HandleTypeDef*)pdev->pData , 0x00 , PCD_SNG_BUF, 0x20);
